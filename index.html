@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Sneakers E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div>
+        <ul class="menuandlogo">
+          <img id="logo" src="./images/logo.svg" alt="logo sneakers">
+          <li>Collections</li>
+          <li>Men</li>
+          <li> Women</li>
+          <li>About</li>
+          <li> Contact</li>
+        </ul>
+      </div>
+
+
+
+      <div class="logoandcart">
+
+        <img  onclick="cartOpen()" id="headercart" src="./images/icon-cart.svg" alt="carrinho">
+        <img id="perfilimg" src="./images/image-avatar.png" alt="imagem de perfil">
+      </div>
+
+    </nav>
+
+
+   <nav class="navmobile" >
+    <div>
+    <img onclick="menuOpen()" src="./images/icon-menu.svg" alt="icone menu lateral">
+    
+    <img id="logomobile" src="./images/logo.svg" alt="logo">
+  </div>
+
+  <div id="cartandperfilmobile" >
+    <img onclick="cartOpen()" id="cartmobile" src="./images/icon-cart.svg" alt="cart">
+    <img id="perfilmobile" src="./images/image-avatar.png" alt="imagem de perfil">
+
+  </div>
+
+  <div>
+    <ul class="menumobile">
+    <img onclick="menuOpen()" id="iconclosemobile" src="./images/icon-close.svg" alt=""> 
+      <li> <br>Collections</li>
+      <li>Men</li>
+      <li> Women</li>
+      <li>About</li>
+      <li> Contact</li>
+    </ul>
+  </div>
+
+
+   </nav>
+
+  </header>
+
+  <main>
+
+
+    <div class="cart" >
+      <div>
+      <span id="cartname" >Cart</span>
+      <span id="yourcartisempty" >Your cart is empty.</span>
+    </div>
+
+    <div class="subcart" >
+
+      <img id="imgprocutcart" src="./images/image-product-1-thumbnail.jpg" alt="">&nbsp&nbsp&nbsp
+
+
+      <span>Fall Limited Edition Sneakers</span><br>
+      <span>&nbsp&nbsp&nbsp$125.00 x <span id="quantityproducts">1</span> <span><b id="totalprice" ></b></span> 
+    
+    </span> &nbsp&nbsp<img onclick="cartClose()" id="trash" src="./images/icon-delete.svg" alt="">
+
+      <div><br>
+      <button id="checkoutbtn" >Checkout</button>
+    </div>
+    </div>
+
+      
+    
+    </div>
+
+
+
+
+
+
+
+    <hr>
+    <section class="home" >
+    <div>
+      
+      <img id="productphoto1" src="./images/image-product-1.jpg" alt="productphoto1">
+      
+
+      <br><br><br>
+      <div class="productthumbs">
+        <img onclick="switchimg1()" id="productthumb1" src="./images/image-product-1-thumbnail.jpg" alt="productthumb1">
+        <img onclick="switchimg2()" id="productthumb2" src="./images/image-product-2-thumbnail.jpg" alt="productthumb2">
+        <img onclick="switchimg3()" id="productthumb3" src="./images/image-product-3-thumbnail.jpg" alt="productthumb3">
+        <img onclick="switchimg4()" id="productthumb4" src="./images/image-product-4-thumbnail.jpg" alt="productthumb4">
+      </div>
+    </div>
+
+    
+    <div class="infos">
+
+      <div id="sneakercompany">Sneaker Company</div>
+      <div id="limitededition">Fall Limited Edition Sneakers</div>
+      <div id="description">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</div>
+      <div>
+        <div id="price">$125.00 <div id="descount">50%</div>
+        </div>
+        <div id="fullprice">$250.00</div>
+      </div>
+
+
+      <div>
+        <img onclick="updatedecrement()" onclick="decrement()" id="minus" src="./images/icon-minus.svg" alt="">
+
+        <span id="quantity">0</span>
+        
+        <img id="plus" onclick="updateadd()"  X src="./images/icon-plus.svg" alt="">
+
+
+        <button id="addtocart"> 
+          
+          
+          <img  class="cartbutton" src="./images/icon-cart-addtocart.svg" alt=""> Add to cart</button>
+      </div>
+
+
+    </div>
+
+  </section>
+
+<script src="./script.js"></script>
+  </main>
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+ 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/gabriel-araújo-a5a439277/ "target="_blank"">Gabriel Araújo</a>.
+  </div>  
+</body>
+
+</html>
