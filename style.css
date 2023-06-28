@@ -20,6 +20,13 @@ header #perfilimg {
     width: 5vh;
 }
 
+header #perfilimg:hover {
+    opacity: 75%;
+    cursor: pointer;
+}
+
+
+
 header .menuandlogo {
     display: flex;
     gap: 4vh;
@@ -43,6 +50,10 @@ header #headercart {
     cursor: pointer;
 }
 
+header #headercart:hover {
+   opacity: 75%;
+}
+
 hr {
     opacity: 75%;
 }
@@ -56,6 +67,15 @@ main #productphoto1 {
     margin-top: 7%;
     margin-left: 5%;
     border-radius: 3.5%;
+}
+
+
+main #productthumb1:hover,
+#productthumb2:hover,
+#productthumb3:hover,
+#productthumb4:hover {
+    opacity: 75%;
+    cursor: pointer;
 }
 
 
@@ -162,7 +182,7 @@ main #quantity {
     font-size: 2vh;
     padding-left: 5vh;
     padding-right: 5vh;
-    
+
 
 }
 
@@ -180,17 +200,26 @@ main #addtocart {
     border: none;
     margin-left: 5vh;
     cursor: pointer;
-    
+
 }
-main #addtocart:hover{
-    background-color: hsl(26, 100%, 50%);
+
+main #addtocart:hover {
+    opacity: 75%;
     transition: 0.5s;
 
 }
 
-main #minus, #plus{
+main #minus,
+#plus {
     cursor: pointer;
     outline-style: none;
+
+}
+main #minus:hover,
+#plus:hover {
+    cursor: pointer;
+    outline-style: none;
+    opacity: 75%;
 
 }
 
@@ -212,10 +241,10 @@ main .cart {
     border: gray solid 1px;
     border-radius: 3%;
     display: none;
-    
+
 }
 
-main #yourcartisempty{
+main #yourcartisempty {
     position: absolute;
     top: 11vh;
     left: 5.5vw;
@@ -223,13 +252,13 @@ main #yourcartisempty{
     font-weight: 700;
     font-size: 1vw;
     color: rgba(128, 128, 128, 0.854);
-    
-    
+
+
 }
 
-main .opencart{
+main .opencart {
     display: block;
-    
+
 }
 
 main #imgprocutcart {
@@ -238,7 +267,7 @@ main #imgprocutcart {
     align-items: center;
     position: relative;
     top: 3vh;
-    
+
 }
 
 main .subcart {
@@ -251,7 +280,7 @@ main .subcart {
     align-items: center;
     font-size: 1vw;
     background-color: white;
-    
+
 }
 
 
@@ -262,7 +291,19 @@ main #cartname {
     padding-left: 2vh;
 }
 
-main #checkoutbtn{
+header #cartnumber {
+    font-size: 0.7vw;
+    position: relative;
+    right: 1.3vw;
+    bottom: 1vh;
+    background-color: hsl(26, 100%, 62%);
+    border-radius: 30px;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+    color: white;
+}
+
+main #checkoutbtn {
     border: solid hsl(26, 100%, 62%);
     background-color: hsl(26, 100%, 62%);
     font-family: Kumbh Sans;
@@ -273,17 +314,19 @@ main #checkoutbtn{
     height: 6vh;
     font-size: 1vw;
 }
-main #checkoutbtn:hover{
+
+main #checkoutbtn:hover {
     background-color: hsl(26, 100%, 50%);
     transition: 0.5s;
     cursor: pointer;
 }
-main #trash{
+
+main #trash {
     width: 1vw;
     cursor: pointer;
 }
 
-body .attribution{
+body .attribution {
     position: fixed;
     bottom: 1vh;
     left: 45vw;
@@ -291,11 +334,11 @@ body .attribution{
     text-decoration: none;
 }
 
-main .subcart{
+main .subcart {
     display: none;
 }
 
-main .cartAP{
+main .cartAP {
     display: block;
 }
 
@@ -320,24 +363,25 @@ header .navmobile,
         border: gray solid 1px;
         border-radius: 3%;
         display: none;
-        
-    
-    
+
+
+
     }
 
-    main .opencart{
+    main .opencart {
         display: block;
     }
+
     main #imgprocutcart {
         width: 10vw;
         border-radius: 10%;
         align-items: center;
         position: relative;
         top: 3vh;
-        
-        
+
+
     }
-    
+
     main .subcart {
         position: absolute;
         top: 6vh;
@@ -347,25 +391,25 @@ header .navmobile,
         text-align: center;
         align-items: center;
         font-size: 3vw;
-        
+
     }
 
-    main #checkoutbtn{
+    main #checkoutbtn {
 
         width: 40vw;
         height: 6vh;
         font-size: 3vw;
         margin-top: 2vh;
-    
-        
+
+
     }
 
-    main #trash{
+    main #trash {
         width: 3vw;
         cursor: pointer;
     }
 
-    main #yourcartisempty{
+    main #yourcartisempty {
         position: absolute;
         top: 13vh;
         left: 16vw;
@@ -373,18 +417,18 @@ header .navmobile,
         font-weight: 700;
         font-size: 3vw;
         color: rgba(128, 128, 128, 0.854);
-        
+
     }
-    
 
-    
-    
 
- 
+
+
+
+
     main .home {
         display: grid;
-        grid-template-areas: "l" "f";
-        grid-template-columns: 1fr, 1fr;
+        grid-template-areas: "l" "f" ;
+        grid-template-columns: 1fr
 
     }
 
@@ -498,11 +542,11 @@ header .navmobile,
         display: block;
     }
 
-    body .attribution{
+    body .attribution {
         display: none;
     }
 
-    
+
 
 
 

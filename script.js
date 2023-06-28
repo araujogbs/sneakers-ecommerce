@@ -30,6 +30,7 @@ function cartOC() {
     }
 }
 
+
 let btncart = document.querySelector("#addtocart")
 
 btncart.addEventListener('click', () => {
@@ -43,6 +44,8 @@ function cartClose() {
     let cartinvisible = document.querySelector('.subcart')
     if (cartinvisible.classList.contains('cartAP')) {
         cartinvisible.classList.remove('cartAP')
+        document.getElementById('cartnumber').innerHTML = 0
+
     }
     else {
         cartinvisible.classList.remove('cartAP')
@@ -94,6 +97,8 @@ function addtoCart() {
 
 
     document.getElementById('totalprice').innerHTML = '$' + 125 * quantity + '.00'
+
+    document.getElementById('cartnumber').innerHTML = quantity
 }
 
 
