@@ -52,5 +52,5 @@ O usuário devem ser capazes de:
 
 ## Autor
 
-- Linkedin - [Gabriel Araújo](https://www.linkedin.com/in/gabriel-araújo-a5a439277/)
+- Website - [Gabriel Araújo](https://www.linkedin.com/in/gabriel-araújo-a5a439277/)
 - Frontend Mentor - [@Araujogbs](https://www.frontendmentor.io/profile/araujogbs)
